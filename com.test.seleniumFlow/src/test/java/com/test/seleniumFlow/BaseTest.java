@@ -6,10 +6,11 @@ import org.testng.annotations.Test;
 
 public class BaseTest {
 	@Test
-	public void base(){
+	public void base() throws InterruptedException{
 		System.setProperty("webdriver.chrome.driver", "src/main/java/chromedriver.exe");
 		WebDriver driver= new ChromeDriver();
-		driver.get("https://www.seleniumeasy.com/test/");
+		driver.get("https://www.irctc.co.in");
+		Thread.sleep(100);
         driver.close();
 	}
 }
