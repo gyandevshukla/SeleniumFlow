@@ -12,5 +12,6 @@ public class BaseTest {
 		driver.get("https://www.irctc.co.in");
 		Thread.sleep(100);
         driver.close();
+        
 	}
 }
